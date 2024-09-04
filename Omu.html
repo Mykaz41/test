@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gila ternyata guweh bisa bikin kek gini bjirrr!!!</title>
+    <style>
+        @keyframes zoomInSmooth {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeInSmooth {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            font-family: 'Treasure Map Dead Hand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('kuoo.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 5px solid #ffd700;
+            opacity: 1; /* Ubah dari 0 menjadi 1 */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ffd700;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .profile-pic:hover {
+            animation: zoomInSmooth 0.5s forwards;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .info h1 {
+            margin: 10px 0;
+            color: #ffd700;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .info p {
+            margin: 10px 0;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .info pre {
+            background-color: #3b3b3b;
+            color: #dcdcdc;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            border: 1px solid #ffd700;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .info pre:hover {
+            background-color: #ffd700;
+            color: #000;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #ff4500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .social-links a:hover {
+            background-color: #ff6347;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="mainContent">
+    <div class="info">
+        <img src="zyoo.jpg" alt="Foto Profil" class="profile-pic">
+        <h1>Raihan Rafi Fallahi</h1>
+        <pre>Ahoy! Name guweh Raihan, seorang manusia yang keseharianya nganggur. gak tau mau ngomongin apa disini, lagian ini mah gagabutan doang. tapi kalo mau kepoin sosmed ane mah silakan, tinggal pencet aja tautan dibawah ini!</pre>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/mykaz_?igsh=NWEza2IxNWZlMm9o" target="_blank">Instagram</a>
+        <a href="https://vm.tiktok.com/ZS2rExv5U/" target="_blank">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=100076017440839" target="_blank">Facebook</a>
+    </div>
+</div>
+
+</body>
+</html>
